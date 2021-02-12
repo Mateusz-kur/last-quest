@@ -6,11 +6,37 @@
     padding: 15px;
 }
 body {
-    margin: 0 1%;
+    margin: 0;
+    padding: 0;
+    min-width: 1140px;
 }
 section {
-    margin: 12px 0;
     padding: 12px 0;
+    margin: 0 auto;
+}
+.container {
+    text-align: center;
+    margin: 0px auto;
+    max-width: 1440px;
+
+}
+h2 {
+    padding-top: 36px;
+    font-size: 36px;
+    margin-bottom: 0px;
+}
+h6 {
+    font-size: 14px;
+    margin-top: 0px;
+    padding-bottom: 35px;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box {
+    flex: 0 0 33.333%;
 }
 /*GLOBAL*/
 /*SPALSH*/
@@ -22,28 +48,34 @@ section {
 }
 nav {
     padding: 3px 10px 0 10px;
+
     .box {
-        display: flex;
+        position: relative;
         .golden {
-            flex: 0 4 40%;
-            padding: 0 30px;
+            position: absolute;
+            top: 30px;
+            left: 75px;
+            padding: 0 75px;
+
             .btn-1 {
                 color: gold;
             }
         }
         .others {
-            flex: 5 5 60%;
+            position: absolute;
+            top: 30px;
+            right: 75px;
             padding: 0 10px;
         }
     }
 }
 .under-nav {
     position: absolute;
-    left: 31%;
+    left: 30%;
+    right: 30%;
     top: 120px;
     color:white;
     .container {
-        text-align: center;
         display: block;
         h2 {
             font-size: 24px;
@@ -60,24 +92,20 @@ nav {
 /*SPALSH*/
 /*SERVICES*/
 .services {
+
     .container {
-        text-align: center;
-        h2 {
-            font-size: 36px;
-            margin-bottom: 0px;
-        }
-        h6 {
-            margin-top: 0px;
-            padding-bottom: 35px;
-        }
+
         .row {
-            display: flex;
+
             .box {
-                flex: 0 0 33.333%
+                margin: 0 15px;
+                max-width: 330px;
+
                 i {
                     color: orange;
+                    padding: 8px;
                     border: 2px solid orange;
-                    border-radius: 20px;
+                    border-radius: 25px;
                     font-size: 24px;
                 }
                 p:nth-of-type(1) {
@@ -93,3 +121,56 @@ nav {
     }
 }
 /*SERVICES*/
+/*OUR PORTFOLIO*/
+.our-portfolio {
+    background-color: rgba(175, 182, 197, 0.356);
+
+    .container {
+        max-width: 1440px;
+
+        .row {
+            margin: 0 auto;
+
+            .box {
+                max-width: 350px;
+                margin: 15px;
+                background-color: white;
+
+                .obraz {
+                    overflow: hidden;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
+/*OUR PORTFOLIO*/
+/*FOOTER*/
+footer {
+    margin: 0px;
+    padding: 0px;
+
+    .foot-box {
+        position: relative;
+
+        .copy-rights {
+            position: absolute;
+            left: 75px;
+        }
+
+        .foot-links {
+            position: absolute;
+            right: 44%;
+            top: 50%;
+
+            a {
+                text-decoration: none;
+                color: black;
+                i {
+                    padding: 15px 15px;
+                }
+            }
+        }
+    }
+}
+/*FOOTER*/
